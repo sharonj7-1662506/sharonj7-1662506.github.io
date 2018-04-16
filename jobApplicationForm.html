@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Cube Entertainment</title>
+</head>
+
+<body>
+    <h1>Job Application</h1>
+    <form action="http://gclass.sharonj7.com/formtest.php" method="post"> ... </form>
+
+    <h3>Create Account</h3>
+    Email: <input type="email" placeholder="siwon@example.com"> <br>
+    Password: <input type="password" name="pwd"><br>
+    <label>Repeat password:</label> 
+			<input type="password" name="password_r">
+    <br>
+    <label>
+            <input type="checkbox" checked="checked" name="subscribe"> I want my application decision to be sent to the above email address.
+    </label>
+
+    <h3>Personal information</h3>
+    First name: <input type="text" name="firstname"><br> Last name: <input type="text" name="lastname">
+    <br> Nationality: <input type="text" name="Nationality">
+    <br>Gender: <input type="radio" name="answer" value="yes"> Female <input type="radio" name="answer" value="no"> Male
+    <br>University attended: <input type="text" name="University attended">
+
+    <h3>Job Details</h3>
+    <form>
+        <div class="nativeDatePicker">
+          <span class="validity"></span>
+        </div>
+        <p class="fallbackLabel">When are you available for work?</p>
+        <div class="fallbackDatePicker">
+          <div>
+            <span>
+              <label for="month">Month:</label>
+              <select id="month" name="month">
+                <option selected>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </span>
+            <span>
+              <label for="year">Year:</label>
+              <select id="year" name="year">
+                    <option selected>2018</option>
+                    <option>2019</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </form>
+      
+      <p>What type of position are you seeking? (check all that apply)</p>
+      <div>
+        <input type="checkbox" id="Full time" name="Full time" value="Full time">
+            <label for="Full time">Full time</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Part time" name="Part time" value="Part time">
+            <label for="Part time">Part time</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Intern" name="Intern" value="Intern">
+            <label for="Intern">Intern</label>
+        </div>
+        <br>
+        <div class="field">
+                <label>Hours available (Please note that we don't provide fixed working hour schedules)</label>
+                <table>
+                    <tbody><tr>
+                        <td></td>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <th>From</th>
+                        <td><input type="time" size="5" name="su_from"></td>
+                        <td><input type="time" size="5" name="mo_from"></td>
+                        <td><input type="time" size="5" name="tu_from"></td>
+                        <td><input type="time" size="5" name="we_from"></td>
+                        <td><input type="time" size="5" name="th_from"></td>
+                        <td><input type="time" size="5" name="fr_from"></td>
+                        <td><input type="time" size="5" name="sa_from"></td>
+                    </tr>
+                    <tr>
+                        <th>Until</th>
+                        <td><input type="time" size="5" name="su_until"></td>
+                        <td><input type="time" size="5" name="mo_until"></td>
+                        <td><input type="time" size="5" name="tu_until"></td>
+                        <td><input type="time" size="5" name="we_until"></td>
+                        <td><input type="time" size="5" name="th_until"></td>
+                        <td><input type="time" size="5" name="fr_until"></td>
+                        <td><input type="time" size="5" name="sa_until"></td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </fieldset>
+
+    <p>Which job are you applying for?</p>
+    <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+              <select name="jobs"> 
+                    <option value=“Stylist”>Stylist</option> 
+                    <option value=“Event coordinator“>Event coordinator</option> 
+                    <option value=“Artist manager“>Artist manager</option>
+                    <option value=“Public Relations“>Public Relations</option>
+                    <option value=“Sponsorship”>Sponsorship</option> 
+                    <option value=“Makeup Artist“>Makeup Artist</option>
+              </select>
+             </div>
+    
+    <p>Which artist do you want to work with (Check all your preferences) </p>
+    <div>
+            <input type="checkbox" id="Super Junior" name="Super Junior" value="Super Junior">
+                <label for="Super Junior">Super Junior</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Lee Seung Gi" name="Lee Seung Gi" value="Lee Seung Gi">
+                <label for="Lee Seung Gi">Lee Seung Gi</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Seung Ri" name="Seung Ri" value="Seung Ri">
+                <label for="Seung Ri">Seung Ri</label>
+             <div>
+                <input type="checkbox" id="FT Island" name="FT Island" value="FT Island">
+                <label for="FT Island">FT Island</label>
+            </div>
+            <div>
+                <input type="checkbox" id="CN Blue" name="CN Blue" value="CN Blue">
+                <label for="CN Blue">CN Blue</label>
+            </div>
+            <div>
+                <input type="checkbox" id="BTOB" name="BTOB" value="BTOB">
+                <label for="BTOB">BTOB</label>
+                </div>
+
+    <h3>Applicant's Data</h3>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+          <label for="file">Upload your resume</label>
+          <input type="file" id="file" name="file" multiple>
+        </div>
+        <br>
+    <p>Tell us about your previous experiences in the entertainment industry.</p>  
+    <textarea name="deserve" rows="6" cols="60"></textarea>
+    <br>
+    <p>Why did you choose to apply to Cube Entertainment?</p>  
+    <textarea name="deserve" rows="6" cols="60"></textarea>
+        
+<h3> Apply!</h3> 
+    <label>
+            <input type="checkbox" checked="checked" name="subscribe"> I hereby declare that all information provided are true.
+    </label>   
+<br>
+<input type="submit" value="Submit form">
+
+</html>
+    
+          
+
+          
